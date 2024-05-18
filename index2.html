@@ -76,13 +76,14 @@
       <img class="gambar gambar-1" src="assets/page1/Logo Atas.png" alt="">
 
       <div class="d-flex justify-content-center py-sm-4 py-2">
-        <h1 id="opening">Opening</h1>
+        <h1 class="w-40" id="opening">FASILITAS & LAYANAN DAPAT DINIKMATI MASYARAKAT INDONESIA</h1>
       </div>
       
       <img class="gambar gambar-1 py-sm-4 py-2" src="assets/page1/opening.png" alt="">
 
       <div class="d-flex justify-content-center">
-        <img id="tombol" class="gambar tombol" src="assets/page1/Layer 1.png" alt="">
+        <!-- <img id="tombol" class="gambar tombol" src="assets/page1/Layer 1.png" alt=""> -->
+        <h1>TERIMAKASIH</h1>
       </div>
 
     </div>
@@ -94,31 +95,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     
-    <script>
-      document.getElementById('tombol').addEventListener('click', function() {
-        // Create a new h1 element
-        var loadingText = document.createElement('h1');
-        // loadingText.textContent = 'LOADING....';
-        loadingText.classList.add('loader');
-        loadingText.classList.add('p-5');
-        
-        // Get the parent element of the image
-        var parent = this.parentElement;
-        
-        // Replace the image with the new h1 element
-        parent.replaceChild(loadingText, this);
-        
-        // Change the text to 'TERIMAKASIH' after 5 seconds (5000 milliseconds)
-        setTimeout(function() {
-          loadingText.classList.remove('loader');
-          window.location.href = 'index2.html';
-
-        }, 5000);
-      });
-    </script>
-    
-    
-    
-
   </body>
 </html>
