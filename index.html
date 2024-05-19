@@ -85,20 +85,24 @@
     height: 6px;
     border-radius: 50%;
     background: white;
+    transform-origin: 3px 46px;
+
     -webkit-transform-origin: 3px 46px;
     -moz-transform-origin: 3px 46px;
     -ms-transform-origin: 3px 46px;
-    transform-origin: 3px 46px;
+
     content: "";
 }
 
 .circlePercent:after,
 .circlePercent > .progress {
     position: absolute;
+    transform-origin: 48px 48px;
+
     -webkit-transform-origin: 48px 48px;
     -moz-transform-origin: 48px 48px;
     -ms-transform-origin: 48px 48px;
-    transform-origin: 48px 48px;
+
     z-index: 0;
     top: 0;
     left: 0;
@@ -111,10 +115,12 @@
 
 .circlePercent.fiftyPlus:after {
     background: white;
+    transform: rotate(180deg);
+
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
-    transform: rotate(180deg);
+    
 }
 
 .circlePercent > .progress.progress {
@@ -137,6 +143,7 @@
     position: absolute;
     z-index: 1;
     top: 50%;
+    left: 0;
     margin-top: -13px;
     width: 100%;
     height: 26px;
